@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "MazeOfChaos.h"
 
 int main(){
     printf("Hello World!");
