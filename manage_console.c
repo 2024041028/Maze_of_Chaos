@@ -1,7 +1,7 @@
 #include "MazeOfChaos.h"
 
 // *** 콘솔을 움직임 *** // 
-void MoveCosole(int x,int y){
+void MoveConsole(int x,int y){
     HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
     COORD coord;
     coord.X = x;  
@@ -14,7 +14,7 @@ void SetColor(int color_num){
     SetConsoleTextAttribute(hConsole, color_num);
 }
 // *** 커서의 깜빡임을 지워줌 ***//
-void RemoveCursur(){
+void RemoveCursor(){
     CONSOLE_CURSOR_INFO current_info;
     GetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &current_info);
     current_info.bVisible = 0;
